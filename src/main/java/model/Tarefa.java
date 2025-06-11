@@ -48,7 +48,7 @@ public class Tarefa extends Dia{
 
     @Override
     public String toString(){
-        return  "Hoje " + getDia() +
+        return  "\n\nHoje: " + getDia() +
                 "\nTitulo: " + getTitulo() +
                 "\nDescrição: " + getDescricao() +
                 "\nStatus: " + getStatus();

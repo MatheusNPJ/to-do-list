@@ -1,7 +1,7 @@
 package view;
 
 import java.util.Scanner;
-import controller.ControllerToDoList;
+
 import dto.Dto;
 
 public class ViewToDoList {
@@ -45,6 +45,22 @@ public class ViewToDoList {
         dto.descricao = scanner.nextLine();
 
         return dto;
+    }
+
+    public void exibirMensagem(int cod){
+
+        switch (cod) {
+            case 1:
+                System.out.println("Tarefa salva com sucesso!");
+                break;
+            
+            case 2:
+                System.out.println("Este dia não foi encontrado, por favor digite um dia entre 1 e 31");
+
+            default:
+                System.out.println("");
+        }
+
     }
 
 }
